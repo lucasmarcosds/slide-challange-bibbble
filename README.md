@@ -1,5 +1,5 @@
 <h1 align="center">
-  Desafio Slideworks - Bribble
+  Desafio Slideworks - Bribbble
 </h1>
 <p align="center">
   <img src="https://i.imgur.com/5MwuIoo.png" />
