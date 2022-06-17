@@ -6,7 +6,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #CCCCCC;
-  text-align: -webkit-center;
+  
 `;
 
 export const Content = styled.div`
@@ -73,7 +73,10 @@ top: 42px;
 `;
 
 export const MenuLink = styled.a`
-  font-size: 20px;
+  align-items: center;
+  display:flex;
+  font-family: 'Roboto', 'Inter', sans-serif;
+  font-size: 14px;
   transition: 0.5s;
   &.active {
     font-weight: 700;;

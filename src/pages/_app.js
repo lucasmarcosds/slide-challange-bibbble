@@ -9,9 +9,9 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>Slide | Bibbble</title>
       </Head>
-    <Header/>
-    <Footer/>
+      <Header/>
       <Component {...pageProps} />
+      <Footer/>
     </>
   )
 }

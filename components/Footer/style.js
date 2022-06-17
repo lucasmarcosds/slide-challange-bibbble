@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-position: absolute;
+export const Container = styled.footer`
 margin-top: 100px;
 width: 100%;
 height: 270px;
 bottom: 0px;
 text-align: -webkit-center;
+font-family: 'DM Sans', sans-serif;
 
 background: #1E2833;
 `;
@@ -17,11 +17,12 @@ display: flex;
 left:186px;
 right:186px;
 top: 60px;
+margin-left: 186px;
 `;
 
 export const Logo = styled.div`
-position: absolute;
-top: 60px;
+margin-top: 60px;
+margin-right: 13px;
 bottom: 178.12;
 @media (max-width: 560px) {
   left:80px;
@@ -41,19 +42,15 @@ opacity: 0.1;
 `;
 
 export const LogoText = styled.div`
-position: absolute;
-top: 66px;
-bottom: 187px;
-margin-left: 50px;
+margin-top: 66.16px;
+font-style: normal;
 @media (max-width: 560px) {
   left:80px;
 }
 `;
 
-export const Text = styled.div `
-margin-bottom: 59px;
-margin-top: 191px;
-margin-right: 39px;
+export const Text = styled.a `
+
 transition: 0.5s;
 
 font-family: 'DM Sans';
@@ -63,11 +60,21 @@ font-size: 15px;
 line-height: 20px;
 color: #FFFFFF;`;
 
+export const Grid = styled.div`
+position: absolute;
+padding: 2px;
+margin-bottom: 59px;
+margin-top: 191px;
+margin-right: 39px;
+
+display: flex;
+`
+
 export const Icons = styled.a `
 position: absolute;
-top: 190px;
-bottom: 60px;
-right:186px;
+margin-top: 191px;
+margin-right: 39px;
+margin-left: 600px;
 letter-spacing: 40px;
 
 bottom: 178.12;

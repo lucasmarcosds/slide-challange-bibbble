@@ -1,12 +1,17 @@
 import styled from 'styled-components';
 
+export const Grid = styled.div `
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    display: flex;`;
+
 export const Container = styled.div`
-flex-direction: column;
-justify-content: center;
+justify-content: space-between;
 margin-top:24px;
 margin-bottom:24px;
 margin-left:32px;
-margin-right:32px;
 background: #FFFFFF;
 
 width:259px;
@@ -26,8 +31,9 @@ margin-top: 12px;
 margin-left: 24px;
 transition: 0.5s;
 text-align: -webkit-left;
+max-size:16px;
 
-font-family: 'Inter';
+font-family: 'Inter', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
@@ -40,6 +46,7 @@ margin-bottom: 8px;
 margin-top: 6px;
 margin-left: 24px;
 transition: 0.5s;
+max-size:14px;
 
 font-family: 'Inter';
 font-style: normal;
@@ -58,7 +65,11 @@ margin-left: 24px;
 margin-right: 8px;
 margin-top: 8px;
 transition: 0.5s;
-text-align: -webkit-left;
+max-height: 41px;
+text-overflow: ellipsis;
+-webkit-line-clamp: 3;
+white-space: nowrap;
+overflow: hidden;
 
 font-family: 'Inter';
 font-style: normal;
@@ -73,8 +84,10 @@ color: #787885;`;
 
 export const Infos = styled.div `
 margin-top: 8px;
-margin-bottom: 24px;
 margin-left:24px
+max-size:14px;
+display: flex;
+align-items: center;
 
 font-family: 'Inter';
 font-style: normal;
@@ -84,10 +97,17 @@ line-height: 143%;
 
 color: #2264D1;`
 
-export const Button = styled.a `
+export const Button = styled.div `
 height: 32px;
 width: 75px;
 border-radius: 4px;
+padding: 5px;
+
+max-height: 41px;
+text-overflow: ellipsis;
+-webkit-line-clamp: 3;
+white-space: nowrap;
+overflow: hidden;
 
 margin-right: 65px;
 margin-left: 24px;
